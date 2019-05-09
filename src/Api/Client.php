@@ -249,7 +249,7 @@ class Client
             'Authorization' => $this->buildAuth(),
         ];
 
-        if ($this->token->isForUser($this->getIntegrator())) {
+        if ($this->token->isForUser($this->token->getMemberId())) {
             return array_merge(
                 [
                     'x-cw-usertype' => 'integrator',
