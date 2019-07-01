@@ -170,7 +170,7 @@ class Token
      *
      * @param Arrayable|array $token
      */
-    protected function parse($token)
+    public function parse($token)
     {
         // TODO: Put guard here to make sure that we got a token.
         $this->setExpiration($token['expiration']);
